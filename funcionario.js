@@ -11,6 +11,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+///<reference path="pessoa.ts"/>
 var empresa;
 (function (empresa) {
     var Funcionario = /** @class */ (function (_super) {
@@ -29,6 +30,12 @@ var empresa;
         };
         Funcionario.prototype.setSetor = function (setor) {
             this._setor = setor;
+        };
+        Funcionario.prototype.getBanco = function () {
+            return this._banco;
+        };
+        Funcionario.prototype.setBanco = function (banco) {
+            this._banco = banco;
         };
         return Funcionario;
     }(empresa.Pessoa));

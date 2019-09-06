@@ -4,42 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="nome"></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Codigo:</h3>
-                <p id="codigo"></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Idade:</h3>
-                <p id="idade"></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Cpf:</h3>
-                <p id="cpf"></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Credito:</h3>
-                <p id="credito"></p>
-            </div>
-        </div>
-    </div>
+        <table style="width: 100%; font-size:30px;">
+        <tr>
+            <th>Nome</th>
+            <th>Codigo</th>
+            <th>Idade</th>
+            <th>Cpf</th>
+            <th>Credito</th>
+            <th>Banco</th>
+        </tr>
+        <tr>
+            <td id="nome"></td>
+            <td id="codigo"></td>
+            <td id="idade"></td>
+            <td id="cpf"></td>
+            <td id="credito"></td>
+            <td id="banco"></td>
+         </tr>
+        </table>
+     </div>
 </body>
-<script src="ola.js"></script>
+<script src="banco.js"></script>
 <script src="funcionario.js"></script>
 <script src="pessoa.js"></script>
+<script src="cliente.js"></script>
 </html>

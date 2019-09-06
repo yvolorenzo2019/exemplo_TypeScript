@@ -12,6 +12,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 ///<reference path="pessoa.js"/>
+///<reference path="banco.js"/>
 var empresa;
 (function (empresa) {
     var Cliente = /** @class */ (function (_super) {
@@ -30,6 +31,12 @@ var empresa;
         };
         Cliente.prototype.setCredito = function (credito) {
             this._credito = credito;
+        };
+        Cliente.prototype.getBanco = function () {
+            return this._banco;
+        };
+        Cliente.prototype.setBanco = function (banco) {
+            this._banco = banco;
         };
         return Cliente;
     }(empresa.Pessoa));
